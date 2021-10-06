@@ -11,10 +11,11 @@ from transformers.utils import logging
 from transformers.trainer_utils import (
     EvalPrediction,
     PredictionOutput,
+)
+from transformers.trainer_pt_utils import (
     nested_concat,
     nested_numpify,
 )
-
 logger = logging.get_logger(__name__)
 
 class Trainer(HFTrainer):
